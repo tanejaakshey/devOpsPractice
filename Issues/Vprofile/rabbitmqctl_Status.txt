@@ -1,0 +1,103 @@
+root@123e15121a56:/# rabbitmqctl status
+Status of node rabbit@123e15121a56 ...
+Runtime
+
+OS PID: 19
+OS: Linux
+Uptime (seconds): 6064
+Is under maintenance?: false
+RabbitMQ version: 3.12.1
+RabbitMQ release series support status: supported
+Node name: rabbit@123e15121a56
+Erlang configuration: Erlang/OTP 25 [erts-13.2.2.2] [source] [64-bit] [smp:2:2] [ds:2:2:10] [async-threads:1] [jit:ns]
+Crypto library: OpenSSL 3.1.1 30 May 2023
+Erlang processes: 391 used, 1048576 limit
+Scheduler run queue: 1
+Cluster heartbeat timeout (net_ticktime): 60
+
+Plugins
+
+Enabled plugin file: /etc/rabbitmq/enabled_plugins
+Enabled plugins:
+
+ * rabbitmq_prometheus
+ * accept
+ * prometheus
+ * rabbitmq_management
+ * amqp_client
+ * rabbitmq_web_dispatch
+ * cowboy
+ * cowlib
+ * rabbitmq_management_agent
+
+Data directory
+
+Node data directory: /var/lib/rabbitmq/mnesia/rabbit@123e15121a56
+Raft data directory: /var/lib/rabbitmq/mnesia/rabbit@123e15121a56/quorum/rabbit@123e15121a56
+
+Config files
+
+ * /etc/rabbitmq/conf.d/10-defaults.conf
+
+Log file(s)
+
+ * <stdout>
+
+Alarms
+
+(none)
+
+Memory
+
+Total memory used: 0.1417 gb
+Calculation strategy: rss
+Memory high watermark setting: 0.4 of available memory, computed to: 1.6424 gb
+
+reserved_unallocated: 0.0913 gb (64.4 %)
+code: 0.036 gb (25.43 %)
+other_proc: 0.019 gb (13.4 %)
+other_system: 0.0147 gb (10.35 %)
+other_ets: 0.0029 gb (2.08 %)
+atom: 0.0015 gb (1.04 %)
+plugins: 0.0011 gb (0.79 %)
+metrics: 0.0006 gb (0.4 %)
+mgmt_db: 0.0002 gb (0.12 %)
+msg_index: 0.0001 gb (0.09 %)
+binary: 0.0001 gb (0.08 %)
+mnesia: 0.0001 gb (0.05 %)
+connection_other: 0.0 gb (0.03 %)
+quorum_ets: 0.0 gb (0.02 %)
+quorum_queue_dlx_procs: 0.0 gb (0.0 %)
+quorum_queue_procs: 0.0 gb (0.0 %)
+stream_queue_procs: 0.0 gb (0.0 %)
+stream_queue_replica_reader_procs: 0.0 gb (0.0 %)
+allocated_unused: 0.0 gb (0.0 %)
+connection_channels: 0.0 gb (0.0 %)
+connection_readers: 0.0 gb (0.0 %)
+connection_writers: 0.0 gb (0.0 %)
+queue_procs: 0.0 gb (0.0 %)
+queue_slave_procs: 0.0 gb (0.0 %)
+stream_queue_coordinator_procs: 0.0 gb (0.0 %)
+
+File Descriptors
+
+Total: 2, limit: 1048479
+Sockets: 0, limit: 943629
+
+Free Disk Space
+
+Low free disk space watermark: 0.05 gb
+Free disk space: 37.142 gb
+
+Totals
+
+Connection count: 0
+Queue count: 0
+Virtual host count: 1
+
+Listeners
+
+Interface: [::], port: 15672, protocol: http, purpose: HTTP API
+Interface: [::], port: 15692, protocol: http/prometheus, purpose: Prometheus exporter API over HTTP
+Interface: [::], port: 25672, protocol: clustering, purpose: inter-node and CLI tool communication
+Interface: [::], port: 5672, protocol: amqp, purpose: AMQP 0-9-1 and AMQP 1.0
